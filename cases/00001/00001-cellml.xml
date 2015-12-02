@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<model xmlns:cellml="http://www.cellml.org/cellml/1.1#" xmlns="http://www.cellml.org/cellml/1.1#" name="__main">
+<component name="__main">
+<variable initial_value="3" name="a" units="dimensionless"/>
+</component>
+<group>
+<relationship_ref relationship="encapsulation"/>
+<component_ref component="__main"/>
+</group>
+</model>

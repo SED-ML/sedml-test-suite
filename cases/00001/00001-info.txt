@@ -1,0 +1,19 @@
+category:      Test
+synopsis:      Basic report
+sbml:          00001-sedml-sbml.xml
+cellml:        00001-sedml-cellml.xml
+componentTags: UniformTimeCourse, Model, Task, DataGenerator, Report 
+testTags:      
+testType:      TimeCourse
+description:
+
+This is as simple a SED-ML file as you can have and still produce output:  it points to a model, simulates it, and reports the output.  The model itself (both the SBML version and the CellML version) have a single variable, 'a', with a value of '3' that doesn't change.
+
+Antimony version of the model:
+  a=3
+
+PhraSED-ML version of the SED-ML:
+  mod1 = model "00001-sbml.xml"
+  sim1 = simulate uniform(0,10,100)
+  task1 = run sim1 on mod1
+  report time vs a
