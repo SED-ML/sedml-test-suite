@@ -1,7 +1,7 @@
 # sedml-test-suite
 A test suite for SED-ML, modeled after the SBML test suite.
 
-Each test is in a numbered directory in the 'cases/' directory.  When possible, both SBML and CellML versions are present; the focus being on the SED-ML itself rather than the modeling language it points to.  Each directory may contain the following files:
+Each test is in a numbered directory in the 'cases/' directory.  When possible, both SBML and CellML versions are present; the focus being on the SED-ML itself rather than the modeling language it points to.  Each directory may contain the following files, where 'xxxxx' is the number of the directory (i.e. '00001'):
 
 |file                     | description|
 |-------------------------|------------|
