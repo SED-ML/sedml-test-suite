@@ -23,7 +23,7 @@
     </dataGenerator>
     <dataGenerator id="report_0_0_1" name="a">
       <listOfVariables>
-        <variable id="a" target="/sbml:sbml/sbml:model/descendant::*[@name='a']" taskReference="task1" modelReference="mod1"/>
+        <variable id="a" target="/cellml:model/descendant::*[@name='a']" taskReference="task1" modelReference="mod1"/>
       </listOfVariables>
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <ci> a </ci>
