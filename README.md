@@ -26,3 +26,4 @@ The format of the 'info' file is as follows:
 |testType:     | TimeCourse  *Not sure if this is needed either--might be covered by the componentTags?*  |
 |description:  | *A longer description of the test.  May include an Antimony version of the model, and a phraSED-ML version of the SED-ML, if people don't think it's too cheesy to include my own stuff here ;-)  This is exactly the sort of context where those languages are particularly useful, though.*|
 
+The 'contributions' file is for people to upload SED-ML files they think might be useful to add to the suite proper.

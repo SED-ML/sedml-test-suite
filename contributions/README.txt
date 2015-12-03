@@ -1,0 +1,1 @@
+Feel free to upload SEDML files here that you use in your own testing that you think would make good contributions to the SED-ML test suite in general.  As they get used, this directory will be cleared out.
