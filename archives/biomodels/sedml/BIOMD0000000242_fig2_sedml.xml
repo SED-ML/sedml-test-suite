@@ -2,7 +2,7 @@
 <!-- Written by libSedML v1.1.4848.38309 see http://libsedml.sf.net -->
 <sedML level="1" version="1" xmlns="http://sed-ml.org/">
   <listOfSimulations>
-    <uniformTimeCourse id="sim1" initialTime="200" outputStartTime="0" outputEndTime="400" numberOfPoints="1000">
+    <uniformTimeCourse id="sim1" initialTime="0" outputStartTime="200" outputEndTime="400" numberOfPoints="1000">
       <algorithm kisaoID="KISAO:0000019" />
     </uniformTimeCourse>
   </listOfSimulations>
