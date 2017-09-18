@@ -9,5 +9,5 @@ See also:
     https://academic.oup.com/database/article-lookup/doi/10.1093/database/bau130 
     PMID:25754863 
 
-
+The combine archives are created from the SED-ML files with python script in this folder.
 
