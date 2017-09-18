@@ -1,6 +1,11 @@
 # sedml-test-suite
 A test suite for SED-ML, modeled after the SBML test suite.
 
+The test suite contains of two main parts:
+* archives: combine archives containing SED-ML bases simulation experiments
+* cases: individual test cases similar to the SBML test suite
+
+
 Each test is in a numbered directory in the `cases/` directory.  When possible, both SBML and CellML versions are present; the focus being on the SED-ML itself rather than the modeling language it points to.  Each directory may contain the following files, where `xxxxx` is the number of the directory (i.e. `00001`):
 
 |file                     | description|
@@ -26,4 +31,4 @@ The format of the `info` file is as follows:
 |`testType:`     | TimeCourse  *Not sure if this is needed either--might be covered by the componentTags?*  |
 |`description:`  | *A longer description of the test.  May include an Antimony version of the model, and a phraSED-ML version of the SED-ML, if people don't think it's too cheesy to include my own stuff here ;-)  This is exactly the sort of context where those languages are particularly useful, though.*|
 
-The `contributions` folder is for people to upload SED-ML files they think might be useful to add to the suite proper.
+The `contributions` folder is for people to upload SED-ML files or Combine Archives they think might be useful to add to the suite proper.
