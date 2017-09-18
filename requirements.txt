@@ -1,0 +1,14 @@
+######################################################################
+# Requirements for python scripts
+######################################################################
+#
+# This file contains the necessary requirements to
+# run the python scripts in archives to create
+# combine archives.
+#
+#   mkvirtualenv sedml-test-suite
+#   (sedml-test-suite) pip install -r requirements.txt
+#
+######################################################################
+
+python-libcombine>=0.2.1
