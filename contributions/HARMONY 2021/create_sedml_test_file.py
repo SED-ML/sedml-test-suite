@@ -61,10 +61,6 @@ curve = plot.getCurve(1)
 sa.setYDataReferenceTo(curve.getYDataReference())
 sa.setStyle("blue_fill")
 
-plot.removeCurve(0)
-plot.removeCurve(0)
-plot.removeCurve(0)
-
 
 style = sedml.createStyle()
 style.setId("purple_dash")
