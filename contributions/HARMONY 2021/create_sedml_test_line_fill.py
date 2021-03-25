@@ -49,7 +49,7 @@ curve.setStyle("red_dashed_line")
 style = sedml.createStyle()
 style.setId("blue_fill")
 line = style.createLineStyle()
-line.setColor("#FF00FF")
+line.setColor("#FF00FFaa")
 line.setThickness(10)
 line.setStyle(libsedml.SEDML_LINETYPE_DASHDOT)
 fill = style.createFillStyle()
@@ -63,7 +63,7 @@ line.setColor("#FF0000")
 line.setStyle(libsedml.SEDML_LINETYPE_DASH)
 
 
-sedstr = sedml.toSed()
+sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)
 
 te.saveToFile("case_01", SBML)

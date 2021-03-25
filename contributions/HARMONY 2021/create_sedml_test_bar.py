@@ -59,11 +59,11 @@ fill.setColor("#0000FF")
 style = sedml.createStyle()
 style.setId("red_dashed_line")
 line = style.createLineStyle()
-line.setColor("#FF0000")
+line.setColor("#FF000033")
 line.setStyle(libsedml.SEDML_LINETYPE_DASH)
 
 
-sedstr = sedml.toSed()
+sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)
 
 te.saveToFile("case_01", SBML)

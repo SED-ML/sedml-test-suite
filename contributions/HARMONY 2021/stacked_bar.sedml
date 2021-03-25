@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <sedML xmlns="http://sed-ml.org/sed-ml/level1/version4" level="1" version="4">
   <listOfModels>
     <model id="model0" language="urn:sedml:language:sbml.level-3.version-1" source="case_01.xml"/>
@@ -72,8 +73,8 @@
       <fill color="#0000FF"/>
     </style>
     <style id="blue_with_red">
-      <line color="#FF0000" thickness="4"/>
-      <fill color="#aaaaFF"/>
+      <line color="#FF000033" thickness="4"/>
+      <fill color="#aaaaFFaa"/>
     </style>
   </listOfStyles>
 </sedML>

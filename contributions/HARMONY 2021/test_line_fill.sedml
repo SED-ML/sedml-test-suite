@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <sedML xmlns="http://sed-ml.org/sed-ml/level1/version4" level="1" version="4">
   <listOfModels>
     <model id="model0" language="urn:sedml:language:sbml.level-3.version-1" source="case_01.xml"/>
@@ -68,7 +69,7 @@
   </listOfOutputs>
   <listOfStyles>
     <style id="blue_fill">
-      <line style="dashDot" color="#FF00FF" thickness="10"/>
+      <line style="dashDot" color="#FF00FFaa" thickness="10"/>
       <fill color="#0000FF"/>
     </style>
     <style id="red_dashed_line">

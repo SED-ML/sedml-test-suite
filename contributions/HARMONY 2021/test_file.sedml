@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <sedML xmlns="http://sed-ml.org/sed-ml/level1/version4" level="1" version="4">
   <listOfModels>
     <model id="model0" language="urn:sedml:language:sbml.level-3.version-1" source="case_02.xml"/>
@@ -66,7 +67,6 @@
         <curve id="plot_0__plot_0_0_0__plot_0_0_1" logX="false" style="purple_dash" xDataReference="plot_0_0_0" logY="false" yDataReference="plot_0_0_1" type="points"/>
         <curve id="plot_0__plot_0_0_0__plot_0_1_1" logX="false" style="red_dash_dot" xDataReference="plot_0_0_0" logY="false" yDataReference="plot_0_1_1" type="points"/>
         <curve id="plot_0__plot_0_0_0__plot_0_2_1" logX="false" style="green_line_orange_circles" xDataReference="plot_0_0_0" logY="false" yDataReference="plot_0_2_1" type="points"/>
-        <shadedArea id="S2_S3" style="blue_fill" xDataReference="plot_0_0_0" yDataReferenceFrom="plot_0_2_1" yDataReferenceTo="plot_0_1_1"/>
       </listOfCurves>
     </plot2D>
     <report id="report_1">
@@ -77,15 +77,20 @@
     </report>
   </listOfOutputs>
   <listOfStyles>
-    <style id="purple_dash">
-      <line style="dash" color="#FF00FF" thickness="4"/>
+    <style id="dash">
+      <line style="dash" thickness="4"/>
+    </style>
+    <style id="purple_dash" baseStyle="dash">
+      <line color="#FF00FF"/>
     </style>
     <style id="red_dash_dot">
       <line style="dashDot" color="#FF0000" thickness="4"/>
     </style>
-    <style id="green_line_orange_circles">
-      <line style="solid" color="#00FF00" thickness="4"/>
+    <style id="orange_circles">
       <marker size="16" style="circle" fill="#FFa500"/>
+    </style>
+    <style id="green_line_orange_circles" baseStyle="orange_circles">
+      <line style="solid" color="#00FF00" thickness="4"/>
     </style>
     <style id="blue_fill">
       <fill color="#0000ff"/>

@@ -52,22 +52,17 @@ curve = plot.getCurve(2)
 curve.setType(libsedml.SEDML_CURVETYPE_POINTS)
 curve.setStyle("green_line_orange_circles")
 
-#Create a ShadedArea
-sa = plot.createShadedArea()
-sa.setId("S2_S3")
-sa.setXDataReference(curve.getXDataReference())
-sa.setYDataReferenceFrom(curve.getYDataReference())
-curve = plot.getCurve(1)
-sa.setYDataReferenceTo(curve.getYDataReference())
-sa.setStyle("blue_fill")
-
+style = sedml.createStyle()
+style.setId("dash")
+line = style.createLineStyle()
+line.setStyle(libsedml.SEDML_LINETYPE_DASH)
+line.setThickness(4)
 
 style = sedml.createStyle()
 style.setId("purple_dash")
+style.setBaseStyle("dash")
 line = style.createLineStyle()
-line.setStyle(libsedml.SEDML_LINETYPE_DASH)
 line.setColor("#FF00FF")
-line.setThickness(4)
 
 style = sedml.createStyle()
 style.setId("red_dash_dot")
@@ -77,16 +72,24 @@ line.setColor("#FF0000")
 line.setThickness(4)
 
 style = sedml.createStyle()
+style.setId("big_circles")
+marker = style.createMarkerStyle()
+marker.setStyle(libsedml.SEDML_MARKERTYPE_CIRCLE)
+marker.setSize(16)
+
+style = sedml.createStyle()
+style.setId("orange_circles")
+style.setBaseStyle("big_circles")
+marker = style.createMarkerStyle()
+marker.setFill("#FFa500")
+
+style = sedml.createStyle()
 style.setId("green_line_orange_circles")
+style.setBaseStyle("orange_circles")
 line = style.createLineStyle()
 line.setStyle(libsedml.SEDML_LINETYPE_SOLID)
 line.setColor("#00FF00")
 line.setThickness(4)
-marker = style.createMarkerStyle()
-marker.setStyle(libsedml.SEDML_MARKERTYPE_CIRCLE)
-marker.setFill("#FFa500")
-marker.setSize(16)
-
 
 
 style = sedml.createStyle()

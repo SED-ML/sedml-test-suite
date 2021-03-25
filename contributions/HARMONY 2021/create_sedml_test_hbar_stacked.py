@@ -64,7 +64,7 @@ fill = style.createFillStyle()
 fill.setColor("#aaaaFF")
 
 
-sedstr = sedml.toSed()
+sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)
 
 te.saveToFile("case_01", SBML)

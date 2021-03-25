@@ -58,13 +58,13 @@ fill.setColor("#0000FF")
 style = sedml.createStyle()
 style.setId("blue_with_red")
 line = style.createLineStyle()
-line.setColor("#FF0000")
+line.setColor("#FF000033")
 line.setThickness(4)
 fill = style.createFillStyle()
-fill.setColor("#aaaaFF")
+fill.setColor("#aaaaFFaa")
 
 
-sedstr = sedml.toSed()
+sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)
 
 te.saveToFile("case_01", SBML)

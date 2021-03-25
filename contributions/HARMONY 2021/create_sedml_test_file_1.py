@@ -69,7 +69,7 @@ marker.setLineThickness(1)
 marker.setStyle(libsedml.SEDML_MARKERTYPE_DIAMOND)
 
 
-sedstr = sedml.toSed()
+sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)
 
 te.saveToFile("case_01", SBML)
