@@ -28,9 +28,7 @@ p_str = """
     sim0 = simulate uniform(0, 10, 10)
     sim0.algorithm.absolute_tolerance = 0.04
     task0 = run sim0 on model0
-    repeat2 = repeat task0 for local.X in uniform(0, 10, 100), model0.S1 = local.X
-    plot "UniformTimecourse" task0.time vs task0.S1, task0.S2, task0.S3
-    report task0.time vs task0.S1
+    plot "UniformTimecourse" time vs S1, S2, S3
 """
 te.saveToFile("case_02.xml", SBML)
 
@@ -84,7 +82,6 @@ line.setThickness(18)
 sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)
 
-te.saveToFile("case_01", SBML)
 te.executeSEDML(sedstr)
 
 sedfile = os.path.basename(__file__)
