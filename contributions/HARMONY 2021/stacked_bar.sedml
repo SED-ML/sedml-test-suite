@@ -73,8 +73,8 @@
       <fill color="#0000FF"/>
     </style>
     <style id="blue_with_red">
-      <line color="#FF000033" thickness="4"/>
-      <fill color="#aaaaFFaa"/>
+      <line color="#FF0000" thickness="4"/>
+      <fill color="#aaaaFF"/>
     </style>
   </listOfStyles>
 </sedML>
