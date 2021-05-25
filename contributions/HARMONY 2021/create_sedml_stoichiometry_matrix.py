@@ -39,12 +39,12 @@ sedml = libsedml.readSedMLFromString(sed)
 sedml.setVersion(4)
 
 datagen = sedml.createDataGenerator()
-datagen.setId("jacobian")
+datagen.setId("stoichiometry_matrix")
 var = datagen.createDependentVariable()
 var.setId("j")
 var.setModelReference("model0")
 var.setTaskReference("task0")
-var.setTerm("urn:sedml:analysis:jacobian:full")
+var.setTerm("urn:sedml:analysis:stoichiometryMatrix:full")
 astn = libsbml.parseL3Formula("j");
 datagen.setMath(astn)
 
@@ -52,9 +52,9 @@ report = sedml.getOutput(0).clone()
 report.removeDataSet(1)
 report.setId("report_2")
 ds = report.getDataSet(0)
-ds.setId("Jacobian_report")
-ds.setLabel("Jacobian")
-ds.setDataReference("jacobian")
+ds.setId("Stoich_report")
+ds.setLabel("Stoichiometry Matrix")
+ds.setDataReference("stoichiometry_matrix")
 ret = sedml.addOutput(report)
 
 

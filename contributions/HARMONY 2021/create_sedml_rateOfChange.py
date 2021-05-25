@@ -13,7 +13,10 @@ import sys
 
 r = te.loada("""
    model case_01
-       species S1=10, S2=5
+       species S1 in C, S2 in C
+       S1 = 10
+       S2 = 5
+       C = 3
        S1 -> S2; S1*k
        k = 0.3
    end
@@ -25,7 +28,8 @@ p_str = """
     model0 = model "case_01.xml"
     sim0 = simulate uniform(0, 10, 10)
     task0 = run sim0 on model0
-    report task0.time, task0.S1
+    plot "UniformTimecourse default" time vs S1, S2
+    plot "UniformTimecourse rateOfChange" time vs S1, S2
 """
 te.saveToFile("case_01.xml", SBML)
 
@@ -38,24 +42,35 @@ if sed is None:
 sedml = libsedml.readSedMLFromString(sed)
 sedml.setVersion(4)
 
-datagen = sedml.createDataGenerator()
-datagen.setId("jacobian")
+datagen = sedml.getDataGenerator(1).clone()
+ovar = datagen.removeVariable(0)
 var = datagen.createDependentVariable()
-var.setId("j")
-var.setModelReference("model0")
+var.setId("S1")
 var.setTaskReference("task0")
-var.setTerm("urn:sedml:analysis:jacobian:full")
-astn = libsbml.parseL3Formula("j");
-datagen.setMath(astn)
+var.setModelReference("model0")
+var.setTerm("urn:sedml:analysis:rateOfChange")
+var.setTarget(ovar.getTarget())
+var.setSymbol2("urn:sedml:symbol:time")
+datagen.setId("S1_roc")
+sedml.addDataGenerator(datagen)
 
-report = sedml.getOutput(0).clone()
-report.removeDataSet(1)
-report.setId("report_2")
-ds = report.getDataSet(0)
-ds.setId("Jacobian_report")
-ds.setLabel("Jacobian")
-ds.setDataReference("jacobian")
-ret = sedml.addOutput(report)
+datagen = sedml.getDataGenerator(2).clone()
+ovar = datagen.removeVariable(0)
+var = datagen.createDependentVariable()
+var.setId("S2")
+var.setTaskReference("task0")
+var.setModelReference("model0")
+var.setTerm("urn:sedml:analysis:rateOfChange")
+var.setTarget(ovar.getTarget())
+var.setSymbol2("urn:sedml:symbol:time")
+datagen.setId("S2_roc")
+sedml.addDataGenerator(datagen)
+
+plot = sedml.getOutput(1)
+curve = plot.getCurve(0)
+curve.setYDataReference("S1_roc")
+curve = plot.getCurve(1)
+curve.setYDataReference("S2_roc")
 
 
 

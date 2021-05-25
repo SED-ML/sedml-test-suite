@@ -28,12 +28,12 @@
         <variable id="task0_____S1" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S1&apos;]" taskReference="task0" modelReference="model0"/>
       </listOfVariables>
     </dataGenerator>
-    <dataGenerator id="jacobian">
+    <dataGenerator id="stoichiometry_matrix">
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <ci> j </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="j" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:jacobian:full"/>
+        <dependentVariable id="j" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:stoichiometryMatrix:full"/>
       </listOfVariables>
     </dataGenerator>
   </listOfDataGenerators>
@@ -46,7 +46,7 @@
     </report>
     <report id="report_2">
       <listOfDataSets>
-        <dataSet id="Jacobian_report" label="Jacobian" dataReference="jacobian"/>
+        <dataSet id="Stoich_report" label="Stoichiometry Matrix" dataReference="stoichiometry_matrix"/>
       </listOfDataSets>
     </report>
   </listOfOutputs>
