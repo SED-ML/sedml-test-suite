@@ -45,27 +45,9 @@ sedml.setVersion(4)
 
 dg = sedml.getDataGenerator(1)
 var = dg.getVariable(0)
-var.setSymbol("urn:sedml:function:average")
+var.setSymbol("KISAO:0000825")
 rd = var.createRemainingDimension()
 rd.setTarget("task0")
-
-# dg2 = dg.clone()
-# dg2.setId("S2_max")
-# var = dg2.getVariable(0)
-# var.setSymbol("urn:sedml:function:max")
-# sedml.addDataGenerator(dg2)
-
-# dg2.setId("S2_min")
-# var.setSymbol("urn:sedml:function:min")
-# sedml.addDataGenerator(dg2)
-
-# dg2.setId("S2_std")
-# var.setSymbol("urn:sedml:function:std")
-# sedml.addDataGenerator(dg2)
-
-
-
-
 
 sedstr = libsedml.writeSedMLToString(sedml)
 print(sedstr)

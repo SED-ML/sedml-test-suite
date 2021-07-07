@@ -44,7 +44,7 @@ var = datagen.createDependentVariable()
 var.setId("j")
 var.setModelReference("model0")
 var.setTaskReference("task0")
-var.setTerm("urn:sedml:analysis:jacobian:full")
+var.setTerm("KISAO:0000812")
 astn = libsbml.parseL3Formula("j");
 datagen.setMath(astn)
 

@@ -45,7 +45,7 @@ sedml.setVersion(4)
 
 dg = sedml.getDataGenerator(1)
 var = dg.getVariable(0)
-var.setSymbol("urn:sedml:function:average")
+var.setSymbol("KISAO:0000825")
 rd = var.createRemainingDimension()
 rd.setTarget("task0")
 
@@ -53,17 +53,22 @@ dg2 = dg.clone()
 dg2.setId("S2_max")
 dg2.setName("S2_max")
 var = dg2.getVariable(0)
-var.setSymbol("urn:sedml:function:max")
+var.setSymbol("KISAO:0000828")
 sedml.addDataGenerator(dg2)
 
 dg2.setId("S2_min")
 dg2.setName("S2_min")
-var.setSymbol("urn:sedml:function:min")
+var.setSymbol("KISAO:0000829")
 sedml.addDataGenerator(dg2)
 
 dg2.setId("S2_std")
 dg2.setName("S2_std")
-var.setSymbol("urn:sedml:function:std")
+var.setSymbol("KISAO:0000826")
+sedml.addDataGenerator(dg2)
+
+dg2.setId("S2_se")
+dg2.setName("S2_se")
+var.setSymbol("KISAO:0000827")
 sedml.addDataGenerator(dg2)
 
 plot2d = sedml.getOutput(0)
@@ -82,6 +87,10 @@ plot2d.addCurve(curve)
 
 curve.setId("S2_min_curve")
 curve.setYDataReference("S2_min")
+plot2d.addCurve(curve)
+
+curve.setId("S2_se_curve")
+curve.setYDataReference("S2_se")
 plot2d.addCurve(curve)
 
 

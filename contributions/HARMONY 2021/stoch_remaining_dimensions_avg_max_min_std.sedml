@@ -40,7 +40,7 @@
         <ci> task1_____S2 </ci>
       </math>
       <listOfVariables>
-        <variable id="task1_____S2" symbol="urn:sedml:function:average" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
+        <variable id="task1_____S2" symbol="KISAO:0000825" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
           <listOfRemainingDimensions>
             <remainingDimension target="task0"/>
           </listOfRemainingDimensions>
@@ -52,7 +52,7 @@
         <ci> task1_____S2 </ci>
       </math>
       <listOfVariables>
-        <variable id="task1_____S2" symbol="urn:sedml:function:max" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
+        <variable id="task1_____S2" symbol="KISAO:0000828" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
           <listOfRemainingDimensions>
             <remainingDimension target="task0"/>
           </listOfRemainingDimensions>
@@ -64,7 +64,7 @@
         <ci> task1_____S2 </ci>
       </math>
       <listOfVariables>
-        <variable id="task1_____S2" symbol="urn:sedml:function:min" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
+        <variable id="task1_____S2" symbol="KISAO:0000829" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
           <listOfRemainingDimensions>
             <remainingDimension target="task0"/>
           </listOfRemainingDimensions>
@@ -76,7 +76,19 @@
         <ci> task1_____S2 </ci>
       </math>
       <listOfVariables>
-        <variable id="task1_____S2" symbol="urn:sedml:function:std" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
+        <variable id="task1_____S2" symbol="KISAO:0000826" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
+          <listOfRemainingDimensions>
+            <remainingDimension target="task0"/>
+          </listOfRemainingDimensions>
+        </variable>
+      </listOfVariables>
+    </dataGenerator>
+    <dataGenerator id="S2_se" name="S2_se">
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <ci> task1_____S2 </ci>
+      </math>
+      <listOfVariables>
+        <variable id="task1_____S2" symbol="KISAO:0000827" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
           <listOfRemainingDimensions>
             <remainingDimension target="task0"/>
           </listOfRemainingDimensions>
@@ -90,6 +102,7 @@
         <curve id="plot_0__plot_0_0_0__plot_0_0_1" logX="false" xDataReference="plot_0_0_0" logY="false" yDataReference="plot_0_0_1" type="points" yErrorUpper="S2_std" yErrorLower="S2_std"/>
         <curve id="S2_max_curve" logX="false" xDataReference="plot_0_0_0" logY="false" yDataReference="S2_max" type="points"/>
         <curve id="S2_min_curve" logX="false" xDataReference="plot_0_0_0" logY="false" yDataReference="S2_min" type="points"/>
+        <curve id="S2_se_curve" logX="false" xDataReference="plot_0_0_0" logY="false" yDataReference="S2_se" type="points"/>
       </listOfCurves>
     </plot2D>
   </listOfOutputs>

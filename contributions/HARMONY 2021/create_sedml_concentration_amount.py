@@ -45,13 +45,13 @@ sedml.setVersion(4)
 
 datagen = sedml.getDataGenerator(1).clone()
 var = datagen.getVariable(0)
-var.setSymbol("urn:sedml:symbol:amount")
+var.setSymbol("KISAO:0000836")
 datagen.setId("S1_amt")
 sedml.addDataGenerator(datagen)
 
 datagen = sedml.getDataGenerator(2).clone()
 var = datagen.getVariable(0)
-var.setSymbol("urn:sedml:symbol:amount")
+var.setSymbol("KISAO:0000836")
 datagen.setId("S2_amt")
 sedml.addDataGenerator(datagen)
 
@@ -64,13 +64,13 @@ curve.setYDataReference("S2_amt")
 
 datagen = sedml.getDataGenerator(1).clone()
 var = datagen.getVariable(0)
-var.setSymbol("urn:sedml:symbol:concentration")
+var.setSymbol("KISAO:0000838")
 datagen.setId("S1_conc")
 sedml.addDataGenerator(datagen)
 
 datagen = sedml.getDataGenerator(2).clone()
 var = datagen.getVariable(0)
-var.setSymbol("urn:sedml:symbol:concentration")
+var.setSymbol("KISAO:0000838")
 datagen.setId("S2_conc")
 sedml.addDataGenerator(datagen)
 

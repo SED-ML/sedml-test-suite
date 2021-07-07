@@ -33,7 +33,7 @@
         <ci> j </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="j" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:stoichiometryMatrix:full"/>
+        <dependentVariable id="j" taskReference="task0" modelReference="model0" term="KISAO:0000811"/>
       </listOfVariables>
     </dataGenerator>
   </listOfDataGenerators>

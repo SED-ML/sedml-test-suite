@@ -40,7 +40,7 @@
         <ci> task1_____S2 </ci>
       </math>
       <listOfVariables>
-        <variable id="task1_____S2" symbol="urn:sedml:function:average" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
+        <variable id="task1_____S2" symbol="KISAO:0000825" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S2&apos;]" taskReference="task1" modelReference="model0">
           <listOfRemainingDimensions>
             <remainingDimension target="task0"/>
           </listOfRemainingDimensions>
