@@ -41,7 +41,7 @@
         <ci> S1 </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="S1" symbol="urn:sedml:symbol:amount" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S1&apos;]" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficient:scaled" target2="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;X0&apos;]"/>
+        <dependentVariable id="S1" symbol="KISAO:0000836" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S1&apos;]" taskReference="task0" modelReference="model0" term="KISAO:0000802" target2="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;X0&apos;]"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="cc_J0_Vmax">
@@ -49,7 +49,7 @@
         <ci> J0Vmax </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="J0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficient:scaled" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
+        <dependentVariable id="J0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="KISAO:0000802" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="ucc_S1_X0" name="S1">
@@ -57,7 +57,7 @@
         <ci> S1 </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="S1" symbol="urn:sedml:symbol:amount" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S1&apos;]" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficient:unscaled" target2="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;X0&apos;]"/>
+        <dependentVariable id="S1" symbol="KISAO:0000836" target="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;S1&apos;]" taskReference="task0" modelReference="model0" term="KISAO:0000803" target2="/sbml:sbml/sbml:model/sbml:listOfSpecies/sbml:species[@id=&apos;X0&apos;]"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="ucc_J0_Vmax">
@@ -65,7 +65,7 @@
         <ci> uJ0Vmax </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="uJ0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficient:unscaled" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
+        <dependentVariable id="uJ0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="KISAO:0000803" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="ec_J0_Vmax">
@@ -73,7 +73,7 @@
         <ci> eJ0Vmax </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="eJ0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:elasticity:scaled" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
+        <dependentVariable id="eJ0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="KISAO:0000807" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="uec_J0_Vmax">
@@ -81,7 +81,7 @@
         <ci> ueJ0Vmax </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="ueJ0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:elasticity:unscaled" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
+        <dependentVariable id="ueJ0Vmax" target="/sbml:sbml/sbml:model/sbml:listOfReactions/sbml:reaction[@id=&apos;J0&apos;]" taskReference="task0" modelReference="model0" term="KISAO:0000805" target2="/sbml:sbml/sbml:model/sbml:listOfParameters/sbml:parameter[@id=&apos;Vmax&apos;]"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="full_jacobian">
@@ -89,7 +89,7 @@
         <ci> fulljacobian </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="fulljacobian" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:jacobian:full"/>
+        <dependentVariable id="fulljacobian" taskReference="task0" modelReference="model0" term="KISAO:0000812"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="reduced_jacobian">
@@ -97,7 +97,7 @@
         <ci> reducedjacobian </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="reducedjacobian" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:jacobian:reduced"/>
+        <dependentVariable id="reducedjacobian" taskReference="task0" modelReference="model0" term="KISAO:0000809"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="full_eigens">
@@ -105,7 +105,7 @@
         <ci> fulleigen </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="fulleigen" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:eigenvalues:full"/>
+        <dependentVariable id="fulleigen" taskReference="task0" modelReference="model0" term="KISAO:0000813"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="reduced_eigens">
@@ -113,7 +113,7 @@
         <ci> reducedeigen </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="reducedeigen" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:eigenvalues:reduced"/>
+        <dependentVariable id="reducedeigen" taskReference="task0" modelReference="model0" term="KISAO:0000810"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="sc_controls">
@@ -121,7 +121,7 @@
         <ci> sc_c </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="sc_c" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficientMatrix:scaled:concentration"/>
+        <dependentVariable id="sc_c" taskReference="task0" modelReference="model0" term="KISAO:0000835"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="uc_controls">
@@ -129,7 +129,7 @@
         <ci> uc_c </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="uc_c" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficientMatrix:unscaled:concentration"/>
+        <dependentVariable id="uc_c" taskReference="task0" modelReference="model0" term="KISAO:0000801"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="sf_controls">
@@ -137,7 +137,7 @@
         <ci> sf_c </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="sf_c" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficientMatrix:scaled:flux"/>
+        <dependentVariable id="sf_c" taskReference="task0" modelReference="model0" term="KISAO:0000815"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="uf_controls">
@@ -145,7 +145,7 @@
         <ci> uf_c </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="uf_c" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:controlCoefficientMatrix:unscaled:flux"/>
+        <dependentVariable id="uf_c" taskReference="task0" modelReference="model0" term="KISAO:0000814"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="sElasticities">
@@ -153,7 +153,7 @@
         <ci> sEs </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="sEs" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:elasticityMatrix:scaled"/>
+        <dependentVariable id="sEs" taskReference="task0" modelReference="model0" term="KISAO:0000806"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="uElasticities">
@@ -161,7 +161,7 @@
         <ci> uEs </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="uEs" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:elasticityMatrix:unscaled"/>
+        <dependentVariable id="uEs" taskReference="task0" modelReference="model0" term="KISAO:0000804"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="stoichiometries">
@@ -169,7 +169,7 @@
         <ci> stoichs </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="stoichs" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:stoichiometryMatrix:full"/>
+        <dependentVariable id="stoichs" taskReference="task0" modelReference="model0" term="KISAO:0000811"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="r_stoichiometries">
@@ -177,7 +177,7 @@
         <ci> rstoichs </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="rstoichs" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:stoichiometryMatrix:reduced"/>
+        <dependentVariable id="rstoichs" taskReference="task0" modelReference="model0" term="KISAO:0000808"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="linkmat">
@@ -185,7 +185,7 @@
         <ci> lmat </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="lmat" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:linkMatrix"/>
+        <dependentVariable id="lmat" taskReference="task0" modelReference="model0" term="KISAO:0000816"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="kernelmat">
@@ -193,7 +193,7 @@
         <ci> kmat </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="kmat" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:kernelMatrix"/>
+        <dependentVariable id="kmat" taskReference="task0" modelReference="model0" term="KISAO:0000817"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="conservationmat">
@@ -209,7 +209,7 @@
         <ci> kmat </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="kmat" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:L0Matrix"/>
+        <dependentVariable id="kmat" taskReference="task0" modelReference="model0" term="KISAO:0000818"/>
       </listOfVariables>
     </dataGenerator>
     <dataGenerator id="Nrmat">
@@ -217,7 +217,7 @@
         <ci> kmat </ci>
       </math>
       <listOfVariables>
-        <dependentVariable id="kmat" taskReference="task0" modelReference="model0" term="urn:sedml:analysis:NrMatrix"/>
+        <dependentVariable id="kmat" taskReference="task0" modelReference="model0" term="KISAO:0000819"/>
       </listOfVariables>
     </dataGenerator>
   </listOfDataGenerators>
